@@ -1,0 +1,24 @@
+.newdiv{
+border:1px solid black;
+height:25px;
+width: 25px;
+margin:.5px;
+
+}
+
+#container{
+   display:flex;
+   flex-wrap: wrap;
+   max-width: 465px;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+html, body {
+    
+    height: 100%;
+    width: 100%;
+}
