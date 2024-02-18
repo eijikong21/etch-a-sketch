@@ -1,4 +1,7 @@
-
+let newDiv = document.createElement('div');
+newDiv.id="cont";
+document.body.appendChild(newDiv);
+let cont = document.querySelector('#cont');
 const btn = document.querySelector("#btn");
 
 function removeDivs(){
@@ -7,18 +10,12 @@ function removeDivs(){
         container.remove();
     }
 }
-function addDivContainer(){
-    let newDivRow = document.createElement('div');
-    container.appendChild(newDivRow);
-    newDivRow.className = "divContainer";
-    const divContainer = document.querySelector('.divContainer');
-}
 function addDiv(gridSize){
     let i=gridSize; 
     let y=gridSize;
         newDiv = document.createElement('div');
         newDiv.id="container";
-        document.body.appendChild(newDiv);
+       cont.appendChild(newDiv);
         container = document.querySelector('#container');
         for(j=1;j<=i;j++){
         let newDivRow = document.createElement('div');
@@ -56,4 +53,4 @@ btn.addEventListener('click',function (){
     addDiv(gridSize);
 });
 
-addDiv(4);
+addDiv(16);
